@@ -1,0 +1,41 @@
+{
+  "type": "record",
+  "name": "Customer",
+  "namespace": "com.example",
+  "fields": [
+    {
+      "name": "id",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "java-class": "java.lang.Long"
+        }
+      ]
+    },
+    {
+      "name": "firstName",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "lastName",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "salary",
+      "type": [
+        "null",
+        {
+          "type": "double",
+          "java-class": "java.lang.Double"
+        }
+      ]
+    }
+  ]
+}

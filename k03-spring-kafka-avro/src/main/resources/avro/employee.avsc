@@ -1,0 +1,46 @@
+{
+  "type" : "record",
+  "name" : "Employee",
+  "namespace" : "com.example.domain",
+  "fields" : [ {
+    "name" : "id",
+    "type" : [ "null", {
+      "type" : "long",
+      "java-class" : "java.lang.Long"
+    } ]
+  }, {
+    "name" : "name",
+    "type" : [ "null", "string" ]
+  }, {
+    "name" : "lastname",
+    "type" : [ "null", "string" ]
+  }, {
+    "name" : "rol",
+    "type" : [ "null", "string" ]
+  }, {
+    "name" : "car",
+    "type" : [ "null", {
+      "type" : "record",
+      "name" : "Car",
+      "fields" : [ {
+        "name" : "id",
+        "type" : [ "null", {
+          "type" : "long",
+          "java-class" : "java.lang.Long"
+        } ]
+      }, {
+        "name" : "type",
+        "type" : [ "null", "string" ]
+      }, {
+        "name" : "company",
+        "type" : [ "null", "string" ]
+      }, {
+        "name" : "price",
+        "type" : [ "null", {
+          "type" : "long",
+          "java-class" : "java.lang.Long"
+        } ]
+      } ]
+    } ]
+  } ]
+}
